@@ -18,7 +18,7 @@ Id : <input type = "text" id = "id" name ="id"/>
 </form>
 </br>
 </br>
-<a href =""><button type = "button" height ="100px" width="30px">Home</button></a>
+<a href ="index"><button type = "button" height ="100px" width="30px">Home</button></a>
 <a href ="display"><button type = "button" height ="100px" width="30px">Display Record</button></a>
 </body>
 </html>

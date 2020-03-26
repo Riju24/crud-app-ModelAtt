@@ -11,14 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
-	@RequestMapping(value="up", method=RequestMethod.GET)
-	public ModelAndView up(@RequestParam("id") String s)
+	@RequestMapping(value="index", method=RequestMethod.GET)
+	public ModelAndView up()
 	{
 		
 		ModelAndView mv = new ModelAndView();
-		
-		mv.addObject("id", s);
-		mv.setViewName("up");
+		mv.setViewName("index");
 		return mv;
 	}
 	

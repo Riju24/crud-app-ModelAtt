@@ -25,6 +25,15 @@ public class StudentController {
 	{
 		this.studentService = studentService;
 	}
+	
+	@RequestMapping(value="*")
+	public ModelAndView up()
+	{
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("index");
+		return mv;
+	}
 
 	@RequestMapping(value="insert", method=RequestMethod.GET)
 	public ModelAndView insertPage()

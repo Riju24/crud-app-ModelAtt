@@ -5,21 +5,42 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<style>
+
+*
+{
+	margin:30px;
+}
+
+.incont
+{
+	width:45%;
+}
+
+
+</style>
 </head>
 <body>
+<div class="jumbotron">
 <h1>Update the Existing Detail</h1>
 </br>
 ${msg }
 </br>
+<div class="container" align="center">
 <form action ="update" method ="post" >
-	Id : <input type = "text" id = "id" name ="id" value = "${id}"/>
+	Id : <input type = "text" id = "id" name ="id" value="${id}"/> &nbsp; &nbsp; &nbsp;
 	Name : <input type = "text" id = "name" name ="name"/>
-	<input type="submit">
-	<input type ="reset">
+	<div class="incont">
+	<input type="submit" class="btn btn-danger" style="float:left";>
+	<input type ="reset" class="btn btn-danger" style="float:right";>
+	</div>
 </form>
+</div>
 </br>
+
 </br>
-<a href =""><button type = "button" height ="100px" width="30px">Home</button></a>
-<a href ="display"><button type = "button" height ="100px" width="30px">Display Record</button></a>
+<a href ="index"><button type = "button" class="btn btn-warning" height ="100px" width="30px" style="float:left;">Home</button></a>
+<a href ="display"><button type = "button" class="btn btn-warning" height ="100px" width="30px" style="float:right";>Display Record</button></a>
 </body>
 </html>

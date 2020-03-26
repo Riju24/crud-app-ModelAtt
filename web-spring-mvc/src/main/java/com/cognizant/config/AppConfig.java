@@ -30,7 +30,7 @@ public class AppConfig {
 	{
 		DriverManagerDataSource ds = new DriverManagerDataSource();
 		ds.setUsername("root");
-		ds.setPassword("root");
+		ds.setPassword("Titly@123");
 		ds.setUrl("jdbc:mysql://localhost:3306/work");
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		
